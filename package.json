@@ -2,6 +2,9 @@
   "name": "generator_otgovorok",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
