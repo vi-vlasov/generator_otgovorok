@@ -28,12 +28,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Для project site (user.github.io/REPO/) раскомментируйте и укажите имя репозитория:
-      # env:
-      #   BASE_PATH: /generator_otgovorok
-      #   NEXT_PUBLIC_SITE_URL: https://USER.github.io/generator_otgovorok
-
       - name: Build static site
+        env:
+          BASE_PATH: /generator_otgovorok
+          NEXT_PUBLIC_SITE_URL: https://vi-vlasov.github.io/generator_otgovorok
         run: npm run build:pages
 
       - name: Upload artifact
