@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
+    "build:pages": "vinext build && touch dist/client/.nojekyll",
     "start": "vinext start",
     "lint": "eslint",
     "dev:next": "next dev",
